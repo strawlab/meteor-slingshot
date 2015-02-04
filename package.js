@@ -1,8 +1,8 @@
 Package.describe({
-  name: "edgee:slingshot",
+  name: 'strawlab:slingshot',
   summary: "Directly post files to cloud storage services, such as AWS-S3.",
-  version: "0.4.1",
-  git: "https://github.com/CulturalMe/meteor-slingshot"
+  version: "0.4.2",
+  git: "https://github.com/strawlab/meteor-slingshot"
 });
 
 Package.on_use(function (api) {
@@ -30,6 +30,6 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-  api.use(["tinytest", "underscore", "edgee:slingshot"]);
+  api.use(["tinytest", "underscore", "strawlab:slingshot"]);
   api.add_files("test/aws-s3.js", "server");
 });
